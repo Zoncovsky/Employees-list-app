@@ -18,6 +18,7 @@ class EmployeesAddForm extends Component {
 
   render () {
     const {name, salary} = this.state;
+    const isNameValid = name.length >= 3;
     return (
       <div className="app-add-form">
         <h3>Add new employee</h3>
@@ -41,7 +42,8 @@ class EmployeesAddForm extends Component {
             onClick={(e) => {
               e.preventDefault();
               this.props.onAddEmployee({ name, salary });
-            }}>
+            }}
+            disabled={!isNameValid}>
               Add
           </button>
         </form>
