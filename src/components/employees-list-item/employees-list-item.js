@@ -1,8 +1,8 @@
 import { Component } from 'react';
 
-import './employers-list-item.css'
+import './employees-list-item.css'
 
-class EmployersListItem extends Component {
+class EmployeesListItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -60,4 +60,4 @@ class EmployersListItem extends Component {
   }
 }
 
-export default EmployersListItem;
+export default EmployeesListItem;

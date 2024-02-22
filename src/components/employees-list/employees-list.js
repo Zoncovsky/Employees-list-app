@@ -1,12 +1,12 @@
-import EmployersListItem from '../employers-list-item/employers-list-item';
-import './employers-list.css'
+import EmployeesListItem from '../employees-list-item/employees-list-item';
+import './employees-list.css'
 
-const EmployersList = ({data, onDelete, onAddEmployee}) => {
+const EmployeesList = ({data, onDelete, onAddEmployee}) => {
 
   const elements = data.map(item => {
     const {id, ...itemProps} = item;
     return (
-      <EmployersListItem
+      <EmployeesListItem
         key={id}
         {...itemProps}
         onDelete={() => onDelete(id)}
@@ -21,4 +21,4 @@ const EmployersList = ({data, onDelete, onAddEmployee}) => {
   );
 }
 
-export default EmployersList;
+export default EmployeesList;

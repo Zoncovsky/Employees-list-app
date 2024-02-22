@@ -3,8 +3,8 @@ import { Component } from 'react';
 import AppInfo from '../app-info/app-info';
 import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
-import EmployersList from '../employers-list/employers-list';
-import EmployeesAddForm from '../employers-add-form/employers-add-form';
+import EmployeesList from '../employees-list/employees-list';
+import EmployeesAddForm from '../employees-add-form/employees-add-form';
 
 import './app.css';
 
@@ -50,7 +50,7 @@ class App extends Component {
           <AppFilter/>
         </div>
   
-        <EmployersList
+        <EmployeesList
         data={this.state.data}
         onDelete={this.deleteItem}/>
         <EmployeesAddForm
